@@ -51,7 +51,7 @@ function ShoppingBag() {
         headers: { Authorization: `Bearer ${token}` }
       });
       loadCart();
-      showNotification('Item removed from bag');
+      showNotification('Item removed from cart');
     } catch (error) {
       showNotification('Failed to remove item');
     }
@@ -83,14 +83,14 @@ function ShoppingBag() {
       {notification && <div className="notification-toast">{notification}</div>}
 
       <div className="bag-header">
-        <h1 className="bag-title">Shopping Bag</h1>
-        <p className="bag-subtitle">{cartData.items.length} items in your bag</p>
+        <h1 className="bag-title">Cart</h1>
+        <p className="bag-subtitle">{cartData.items.length} items in your cart</p>
       </div>
 
       {cartData.items.length === 0 ? (
         <div className="empty-bag">
-          <div className="empty-icon">🛍️</div>
-          <h2>Your bag is empty</h2>
+          <div className="empty-icon">🛒</div>
+          <h2>Your cart is empty</h2>
           <p>Add some delicious sweets to get started!</p>
         </div>
       ) : (

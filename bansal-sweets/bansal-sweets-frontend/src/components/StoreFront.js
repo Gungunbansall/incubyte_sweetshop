@@ -34,7 +34,7 @@ function StoreFront({ user }) {
         { sweetId: productId, quantity: 1 },
         { headers: { Authorization: `Bearer ${token}` } }
       );
-      showNotification('Added to shopping bag!');
+      showNotification('Added to cart!');
     } catch (error) {
       showNotification(error.response?.data?.error || 'Failed to add item');
     }
@@ -120,7 +120,7 @@ function StoreFront({ user }) {
                   onClick={() => addToCart(product._id)}
                   disabled={product.quantity === 0}
                 >
-                  {product.quantity === 0 ? 'Unavailable' : 'Add to Bag'}
+                  {product.quantity === 0 ? 'Unavailable' : 'Add to Cart'}
                 </button>
               )}
             </div>

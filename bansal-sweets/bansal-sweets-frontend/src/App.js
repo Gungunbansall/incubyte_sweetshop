@@ -117,7 +117,7 @@ function App() {
                 onClick={() => setActiveSection('bag')}
               >
                 <span className="menu-icon">🛍️</span>
-                <span className="menu-label">Shopping Bag</span>
+                <span className="menu-label">Cart</span>
               </button>
               <button 
                 className={`menu-item ${activeSection === 'history' ? 'active' : ''}`}

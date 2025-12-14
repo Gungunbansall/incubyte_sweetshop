@@ -1,0 +1,28 @@
+# ===============================
+# Backend (Spring Boot)
+# ===============================
+bfhl-backend/target/
+bfhl-backend/.idea/
+bfhl-backend/*.iml
+bfhl-backend/.classpath
+bfhl-backend/.project
+bfhl-backend/.settings/
+
+# ===============================
+# Frontend (React / Vite)
+# ===============================
+bfhl-frontend/node_modules/
+bfhl-frontend/dist/
+bfhl-frontend/build/
+bfhl-frontend/.env
+bfhl-frontend/.vite/
+
+
+
+# ===============================
+# Common / System
+# ===============================
+node_modules/
+.DS_Store
+.env
+*.log

@@ -1,0 +1,95 @@
+.auth-form-container {
+  width: 100%;
+}
+
+.form-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e4e4e4;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.form-subtitle {
+  color: #a8a8a8;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  color: #e4e4e4;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  padding: 0.9rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #e4e4e4;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #e94560;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
+}
+
+.form-input::placeholder {
+  color: #6a6a6a;
+}
+
+.error-message {
+  background: rgba(233, 69, 96, 0.1);
+  border: 1px solid rgba(233, 69, 96, 0.3);
+  color: #ff6b9d;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.submit-button {
+  padding: 1rem;
+  background: linear-gradient(135deg, #e94560 0%, #ff6b9d 100%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(233, 69, 96, 0.4);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-button:active:not(:disabled) {
+  transform: translateY(0);
+}
